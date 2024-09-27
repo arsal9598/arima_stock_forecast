@@ -25,7 +25,6 @@ def generate_statistics(df):
         "Highest Price": round(df['High'].max(), 2),
         "Lowest Price": round(df['Low'].min(), 2),
         "Total Trading Days": len(df),
-        "Random Statistic": f"The stock had {random.randint(10, 500)} large spikes in price during this period."
     }
     return stats
 
